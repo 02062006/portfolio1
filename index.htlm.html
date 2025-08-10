@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portfolio Artistique</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    color: #0B3D0B;
+  }
+  header {
+    background-color: #0B3D0B;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #111;
+    padding: 15px 0;
+  }
+  nav a {
+    color: #0B3D0B;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: #a0d468;
+  }
+  section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  h2 {
+    border-bottom: 2px solid #0B3D0B;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+  }
+  .gallery div {
+    width: 100%;
+    height: 160px;
+    border: 3px solid #0B3D0B;
+    border-radius: 6px;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0B3D0B;
+    font-style: italic;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+  }
+  label {
+    font-weight: bold;
+  }
+  input, textarea {
+    padding: 10px;
+    border: 2px solid #0B3D0B;
+    border-radius: 5px;
+    background-color: #111;
+    color: #0B3D0B;
+    font-size: 1em;
+  }
+  input::placeholder, textarea::placeholder {
+    color: #0B3D0B;
+    opacity: 0.7;
+  }
+  button {
+    background-color: #0B3D0B;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  button:hover {
+    background-color: #054005;
+  }
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #0B3D0B;
+    border-top: 1px solid #0B3D0B;
+    margin-top: 40px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Mon Portfolio Artistique</h1>
+</header>
+
+<nav>
+  <a href="#presentation">Présentation</a>
+  <a href="#galerie">Galerie</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="presentation">
+  <h2>Présentation</h2>
+  <p>Bienvenue sur mon portfolio artistique. Je suis passionné par la création visuelle et j'explore différentes techniques pour exprimer mes idées à travers l'art. Découvrez ci-dessous mes œuvres et n'hésitez pas à me contacter !</p>
+</section>
+
+<section id="galerie">
+  <h2>Galerie</h2>
+  <div class="gallery">
+    <div>Œuvre 1</div>
+    <div>Œuvre 2</div>
+    <div>Œuvre 3</div>
+    <div>Œuvre 4</div>
+    <div>Œuvre 5</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <form>
+    <label for="name">Nom</label>
+    <input type="text" id="name" name="name" placeholder="Votre nom" required />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Votre email" required />
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+
+    <button type="submit">Envoyer</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 - Mon Portfolio Artistique
+</footer>
+
+</body>
+</html>
